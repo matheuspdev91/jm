@@ -1,0 +1,17 @@
+/* ==========================================================
+   JHONY & MAURA
+   FOUNDATION — Z-INDEX
+========================================================== */
+
+:root {
+    --z-base: 0;
+    --z-content: 10;
+    --z-overlay: 20;
+    --z-dropdown: 30;
+    --z-sticky: 40;
+    --z-header: 50;
+    --z-drawer: 60;
+    --z-modal: 70;
+    --z-toast: 80;
+    --z-tooltip: 90;
+}

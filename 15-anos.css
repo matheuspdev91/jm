@@ -1,0 +1,772 @@
+/* ==========================================================
+   JHONY & MAURA — EXPERIÊNCIA 15 ANOS
+   Camada visual exclusiva. Carregar DEPOIS de cinematic-test.css.
+   Mantém intactos os estilos e as animações compartilhadas.
+========================================================== */
+
+body.page-15-anos {
+    --black: #fff9fc;
+    --white: #fffafd;
+    --muted: #786875;
+    --red: #d94f8a;
+    --pink-soft: #f4b6d2;
+    --plum: #29212a;
+
+    background: var(--black);
+    color: var(--plum);
+}
+
+html:has(body.page-15-anos) {
+    background: #fff9fc;
+    color: #29212a;
+}
+
+/* Navegação clara, elegante e legível */
+.page-15-anos .cinematic-header .logo,
+.page-15-anos .cinematic-header nav a {
+    color: var(--plum);
+}
+
+.page-15-anos .cinematic-header .logo span,
+.page-15-anos .hero-copy h1 span,
+.page-15-anos .hero-state span {
+    color: var(--red);
+}
+
+.page-15-anos .cinematic-header .header-cta {
+    color: var(--plum);
+    border-color: rgba(71, 43, 61, 0.24);
+    background: rgba(255, 249, 252, 0.72);
+    backdrop-filter: blur(14px);
+}
+
+/* Hero: luz rosada em vez do vermelho escuro original */
+.page-15-anos .hero-sticky {
+    background:
+        radial-gradient(ellipse at 78% 40%, rgba(244, 182, 210, 0.62), transparent 42%),
+        radial-gradient(ellipse at 18% 82%, rgba(255, 255, 255, 0.98), transparent 48%),
+        #fff9fc;
+}
+
+.page-15-anos .stage-glow-one {
+    background: rgba(217, 79, 138, 0.28);
+}
+
+.page-15-anos .stage-glow-two {
+    background: rgba(244, 182, 210, 0.7);
+}
+
+.page-15-anos .stage-light {
+    background: linear-gradient(to bottom, transparent, rgba(217, 79, 138, 0.48), transparent);
+}
+
+.page-15-anos .stage-frame {
+    border-color: rgba(115, 73, 97, 0.18);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(244, 182, 210, 0.12) 55%, transparent);
+}
+
+.page-15-anos .stage-frame span {
+    color: rgba(217, 79, 138, 0.055);
+}
+
+.page-15-anos .stage-line {
+    background: rgba(115, 73, 97, 0.18);
+}
+
+.page-15-anos .hero-copy h1 {
+    color: var(--plum);
+}
+
+.page-15-anos .hero-copy .eyebrow,
+.page-15-anos .hero-copy .description,
+.page-15-anos .hero-state,
+.page-15-anos .hero-scroll {
+    color: var(--muted);
+}
+
+.page-15-anos .hero-button {
+    background: var(--red);
+    color: #fffafd;
+    box-shadow: 0 12px 36px rgba(217, 79, 138, 0.18);
+}
+
+.page-15-anos .hero-button:hover {
+    background: #bf3975;
+}
+
+/* Transições e secções: neutraliza os fundos escuros da identidade principal */
+.page-15-anos .dupla-section,
+.page-15-anos .jm-transition,
+.page-15-anos .diferenciais-section,
+.page-15-anos .experience-showcase,
+.page-15-anos .section-transition,
+.page-15-anos .next-section,
+.page-15-anos .final-section {
+    background-color: #fff9fc;
+    color: var(--plum);
+}
+
+.page-15-anos .jm-transition__mark {
+    color: rgba(217, 79, 138, 0.12);
+}
+
+.page-15-anos .jm-transition__light {
+    background: radial-gradient(ellipse, rgba(244, 182, 210, 0.5), transparent 68%);
+}
+
+.page-15-anos .experience-video-section {
+    background:
+        radial-gradient(ellipse 60% 80% at 85% 50%, rgba(217, 79, 138, 0.16), transparent 100%),
+        radial-gradient(circle at 50% 50%, rgba(244, 182, 210, 0.2), transparent 65%),
+        #fff4f9;
+    color: var(--plum);
+}
+
+.page-15-anos .experience-video-section::before {
+    color: var(--red);
+    opacity: 0.045;
+}
+
+.page-15-anos .experience-video-overlay {
+    background: linear-gradient(0deg, rgba(41, 33, 42, 0.62) 0%, rgba(41, 33, 42, 0.12) 55%, transparent 100%);
+}
+
+.page-15-anos .experience-video-copy h2 {
+    color: var(--plum);
+}
+
+.page-15-anos .experience-video-copy h2 span {
+    color: var(--red);
+}
+
+.page-15-anos .next-section a,
+.page-15-anos .final-section a {
+    color: var(--red);
+}
+
+/* Preferência por movimento reduzido respeitada também nesta camada */
+@media (prefers-reduced-motion: reduce) {
+    .page-15-anos *,
+    .page-15-anos *::before,
+    .page-15-anos *::after {
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-15-anos .cinematic-header {
+        background: linear-gradient(180deg, rgba(255, 249, 252, 0.94), rgba(255, 249, 252, 0));
+    }
+}
+
+
+/* ==========================================================
+   15 ANOS — IDENTIDADE DAS SECÇÕES
+   Tudo abaixo é exclusivo desta página.
+   Não altera a folha cinematográfica compartilhada.
+========================================================== */
+
+/* Superfícies e textos das secções editoriais */
+.page-15-anos .repertoire,
+.page-15-anos .experience-showcase {
+    background:
+        radial-gradient(ellipse at 80% 10%, rgba(244, 182, 210, 0.28), transparent 45%),
+        #fff9fc;
+    color: var(--plum);
+}
+
+.page-15-anos .repertoire-header .section-eyebrow,
+.page-15-anos .repertoire-header h2 span,
+.page-15-anos .experience-number,
+.page-15-anos .genre-dot {
+    color: var(--red);
+}
+
+.page-15-anos .repertoire-header h2,
+.page-15-anos .experience-text h2 {
+    color: var(--plum);
+}
+
+.page-15-anos .repertoire-header p,
+.page-15-anos .experience-text > p:last-child,
+.page-15-anos .experience-text .eyebrow {
+    color: var(--muted);
+}
+
+/* Marquee de repertório: linhas e tipografia adaptadas à paleta rosa */
+.page-15-anos .marquee-row {
+    border-top-color: rgba(217, 79, 138, 0.26);
+    border-bottom-color: rgba(217, 79, 138, 0.26);
+}
+
+.page-15-anos .genre-tag {
+    color: var(--plum);
+}
+
+/* Galeria: preserva o efeito de leque e muda apenas a moldura */
+.page-15-anos .experience-slide {
+    border-color: rgba(217, 79, 138, 0.34);
+    background: #fffafd;
+    box-shadow: 0 30px 80px rgba(67, 31, 51, 0.16);
+}
+
+.page-15-anos .experience-arrow {
+    border-color: rgba(71, 43, 61, 0.24);
+    background: rgba(255, 249, 252, 0.88);
+    color: var(--plum);
+}
+
+.page-15-anos .experience-arrow:hover {
+    background: var(--red);
+    border-color: var(--red);
+    color: #fffafd;
+}
+
+.page-15-anos .experience-indicator {
+    background: rgba(71, 43, 61, 0.20);
+}
+
+.page-15-anos .experience-indicator.is-active {
+    background: var(--red);
+}
+
+/* Transição entre secções: luz rosa em vez do feixe vermelho */
+.page-15-anos .section-transition {
+    background:
+        radial-gradient(ellipse at 50% 50%, rgba(244, 182, 210, 0.34), transparent 68%),
+        #fff9fc;
+}
+
+.page-15-anos .transition-beam {
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(217, 79, 138, 0.04) 20%,
+        rgba(217, 79, 138, 0.58) 50%,
+        rgba(217, 79, 138, 0.04) 80%,
+        transparent 100%);
+}
+
+.page-15-anos .transition-glow {
+    background: radial-gradient(ellipse,
+        rgba(244, 182, 210, 0.56),
+        transparent 70%);
+}
+
+/* Experiência em vídeo: superfície clara e overlay menos escuro */
+.page-15-anos .experience-video-section {
+    background:
+        radial-gradient(ellipse 60% 80% at 85% 50%, rgba(217, 79, 138, 0.18), transparent 100%),
+        radial-gradient(circle at 50% 50%, rgba(244, 182, 210, 0.26), transparent 65%),
+        #fff4f9;
+    color: var(--plum);
+}
+
+.page-15-anos .experience-video-overlay {
+    background: linear-gradient(
+        0deg,
+        rgba(41, 33, 42, 0.48) 0%,
+        rgba(41, 33, 42, 0.10) 55%,
+        transparent 100%
+    );
+}
+
+.page-15-anos .experience-video-copy .eyebrow {
+    color: var(--red);
+}
+
+.page-15-anos .experience-video-copy h2 {
+    color: var(--plum);
+}
+
+.page-15-anos .experience-video-copy h2 span {
+    color: var(--red);
+}
+
+/* CTA final */
+.page-15-anos .next-section,
+.page-15-anos .final-section {
+    background:
+        radial-gradient(ellipse at 75% 35%, rgba(244, 182, 210, 0.36), transparent 52%),
+        #fff9fc;
+    color: var(--plum);
+}
+
+.page-15-anos .next-section h2,
+.page-15-anos .final-section h2 {
+    color: var(--plum);
+}
+
+.page-15-anos .next-section h2 span,
+.page-15-anos .final-section h2 span {
+    color: var(--red);
+}
+
+.page-15-anos .next-section p:not(.eyebrow),
+.page-15-anos .final-section p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+.page-15-anos .next-section .hero-button,
+.page-15-anos .final-section .hero-button {
+    background: var(--red);
+    color: #fffafd;
+    box-shadow: 0 12px 36px rgba(217, 79, 138, 0.20);
+}
+
+.page-15-anos .next-section .hero-button:hover,
+.page-15-anos .final-section .hero-button:hover {
+    background: #bf3975;
+}
+
+/* Mantém o cabeçalho legível durante o scroll em ecrãs pequenos */
+@media (max-width: 700px) {
+    .page-15-anos .cinematic-header {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 249, 252, 0.96),
+            rgba(255, 249, 252, 0)
+        );
+    }
+
+    .page-15-anos .experience-showcase {
+        background:
+            radial-gradient(ellipse at 50% 0%, rgba(244, 182, 210, 0.26), transparent 52%),
+            #fff9fc;
+    }
+}
+
+
+/* ==========================================================
+   HERO 15 ANOS — TIARA ANIMADA
+   O movimento de scroll continua sob controle do JS original.
+========================================================== */
+.page-15-anos .stage-frame--tiara {
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(ellipse at 50% 55%, rgba(244, 182, 210, 0.20), transparent 68%);
+    border-color: rgba(217, 79, 138, 0.12);
+}
+
+.page-15-anos .stage-frame--tiara > .tiara-art {
+    display: block;
+    width: 118%;
+    max-width: none;
+    height: auto;
+    overflow: visible;
+    opacity: 0.78;
+    filter: drop-shadow(0 0 18px rgba(217, 79, 138, 0.16));
+    transform-origin: 50% 70%;
+    animation: tiara-float 6.5s ease-in-out infinite;
+}
+
+.page-15-anos .stage-frame--tiara .tiara-glow {
+    animation: tiara-glow 4.8s ease-in-out infinite alternate;
+}
+
+.page-15-anos .stage-frame--tiara .tiara-lines {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 0;
+    animation: tiara-draw 2.2s ease-out both;
+}
+
+.page-15-anos .stage-frame--tiara .tiara-gems {
+    animation: tiara-gem-pulse 3.8s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.page-15-anos .stage-frame--tiara .tiara-sparkle {
+    animation: tiara-sparkle 3.2s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes tiara-float {
+    0%, 100% { transform: translate3d(0, 0, 0) rotate(-1.2deg); }
+    50% { transform: translate3d(0, -12px, 0) rotate(1.2deg); }
+}
+
+@keyframes tiara-glow {
+    from { opacity: 0.55; }
+    to { opacity: 1; }
+}
+
+@keyframes tiara-draw {
+    from { stroke-dashoffset: 1500; }
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes tiara-gem-pulse {
+    0%, 100% { opacity: 0.76; }
+    50% { opacity: 1; }
+}
+
+@keyframes tiara-sparkle {
+    0%, 100% { opacity: 0.25; }
+    50% { opacity: 0.95; }
+}
+
+@media (max-width: 700px) {
+    .page-15-anos .stage-frame--tiara > .tiara-art {
+        width: 132%;
+        opacity: 0.64;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-15-anos .stage-frame--tiara .tiara-art,
+    .page-15-anos .stage-frame--tiara .tiara-glow,
+    .page-15-anos .stage-frame--tiara .tiara-lines,
+    .page-15-anos .stage-frame--tiara .tiara-gems,
+    .page-15-anos .stage-frame--tiara .tiara-sparkle {
+        animation: none !important;
+    }
+}
+
+
+/* ==========================================================
+   SEÇÕES EDITORIAIS — LANDING DE 15 ANOS
+   Recriação em HTML/CSS; fotografias originais usadas sem filtros.
+========================================================== */
+.page-15-anos .quince-duo {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+    align-items: center;
+    gap: clamp(2rem, 6vw, 7rem);
+    padding: clamp(5rem, 10vw, 9rem) clamp(1.25rem, 7vw, 7.5rem);
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 18% 40%, rgba(244, 182, 210, .42), transparent 45%),
+        linear-gradient(135deg, #fffafd 0%, #fff4f9 56%, #fbe8f1 100%);
+    color: #29212a;
+}
+.page-15-anos .quince-duo::before {
+    content: "XV";
+    position: absolute;
+    right: 4vw;
+    top: 2%;
+    color: rgba(217, 79, 138, .055);
+    font: 800 clamp(12rem, 32vw, 34rem)/.8 Georgia, serif;
+    pointer-events: none;
+}
+.page-15-anos .quince-duo__visual {
+    position: relative;
+    min-height: clamp(360px, 42vw, 620px);
+    z-index: 1;
+}
+.page-15-anos .quince-duo__photo {
+    position: absolute;
+    margin: 0;
+    overflow: hidden;
+    border: 1px solid rgba(217, 79, 138, .28);
+    background: #fffafd;
+    box-shadow: 0 28px 70px rgba(74, 43, 62, .16);
+}
+.page-15-anos .quince-duo__photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Sem filtros: mantém as fotografias originais. */
+}
+.page-15-anos .quince-duo__photo--main {
+    inset: 2% 14% 9% 0;
+    border-radius: 2px 2px 72px 2px;
+}
+.page-15-anos .quince-duo__photo--detail {
+    width: 43%;
+    height: 36%;
+    right: 0;
+    bottom: 0;
+    border: 8px solid #fffafd;
+    outline: 1px solid rgba(217, 79, 138, .3);
+}
+.page-15-anos .quince-duo__seal {
+    position: absolute;
+    right: 4%;
+    top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: clamp(78px, 9vw, 122px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(217, 79, 138, .55);
+    border-radius: 50%;
+    background: rgba(255, 250, 253, .92);
+    color: #d94f8a;
+    font: 500 clamp(1.7rem, 3vw, 2.8rem)/.9 Georgia, serif;
+    box-shadow: 0 10px 30px rgba(74, 43, 62, .1);
+}
+.page-15-anos .quince-duo__seal span {
+    margin-top: .35rem;
+    font: 600 .62rem/1 sans-serif;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.page-15-anos .quince-duo__copy {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+}
+.page-15-anos .quince-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: 0 0 1.5rem;
+    color: #b83e78;
+    font: 700 .72rem/1.5 "Plus Jakarta Sans", sans-serif;
+    letter-spacing: .19em;
+    text-transform: uppercase;
+}
+.page-15-anos .quince-eyebrow > span {
+    display: inline-block;
+    width: 36px;
+    height: 1px;
+    flex: 0 0 36px;
+    background: #d94f8a;
+}
+.page-15-anos .quince-duo__copy h2,
+.page-15-anos .quince-experience__heading h2 {
+    margin: 0;
+    color: #29212a;
+    font: 700 clamp(2.8rem, 5.3vw, 5.8rem)/.98 Georgia, "Times New Roman", serif;
+    letter-spacing: -.055em;
+}
+.page-15-anos .quince-duo__copy h2 em,
+.page-15-anos .quince-experience__heading h2 em {
+    color: #d94f8a;
+    font-weight: 500;
+}
+.page-15-anos .quince-duo__description {
+    max-width: 520px;
+    margin: 1.7rem 0 2.2rem;
+    color: #786875;
+    font-size: clamp(1rem, 1.2vw, 1.12rem);
+    line-height: 1.8;
+}
+.page-15-anos .quince-duo__facts {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid rgba(217, 79, 138, .24);
+}
+.page-15-anos .quince-duo__facts > div {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 1rem;
+    align-items: start;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(217, 79, 138, .24);
+}
+.page-15-anos .quince-duo__facts span {
+    color: #d94f8a;
+    font-size: .76rem;
+    letter-spacing: .12em;
+}
+.page-15-anos .quince-duo__facts p {
+    margin: 0;
+    color: #4e414e;
+    line-height: 1.6;
+}
+
+/* Experiência: fotografia original + conteúdo sem texto rasterizado */
+.page-15-anos .quince-experience {
+    padding: clamp(4.5rem, 8vw, 8rem) clamp(1.25rem, 7vw, 7.5rem);
+    background:
+        radial-gradient(ellipse at 50% 0%, rgba(244, 182, 210, .34), transparent 48%),
+        #fffafd;
+    color: #29212a;
+}
+.page-15-anos .quince-experience__heading {
+    max-width: 820px;
+    margin: 0 auto clamp(2.5rem, 5vw, 4.5rem);
+    text-align: center;
+}
+.page-15-anos .quince-experience__heading .quince-eyebrow {
+    justify-content: center;
+}
+.page-15-anos .quince-experience__heading > p:last-child {
+    max-width: 650px;
+    margin: 1.4rem auto 0;
+    color: #786875;
+    font-size: 1.03rem;
+    line-height: 1.8;
+}
+.page-15-anos .quince-experience__photo-strip {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: clamp(.65rem, 1.8vw, 1.5rem);
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+.page-15-anos .quince-experience__photo-strip figure {
+    position: relative;
+    min-width: 0;
+    height: clamp(180px, 25vw, 360px);
+    margin: 0;
+    overflow: hidden;
+    background: #fbe8f1;
+    border: 1px solid rgba(217, 79, 138, .25);
+}
+.page-15-anos .quince-experience__photo-strip figure:nth-child(2) {
+    transform: translateY(1.2rem);
+}
+.page-15-anos .quince-experience__photo-strip img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page-15-anos .quince-experience__photo-strip figcaption {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 2.6rem 1rem .9rem;
+    background: linear-gradient(transparent, rgba(35, 25, 36, .78));
+    color: #fffafd;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+.page-15-anos .quince-experience__steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid rgba(217, 79, 138, .3);
+    border-left: 1px solid rgba(217, 79, 138, .3);
+}
+.page-15-anos .quince-step {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 1rem;
+    min-width: 0;
+    padding: clamp(1.2rem, 2.2vw, 2rem);
+    border-right: 1px solid rgba(217, 79, 138, .3);
+    border-bottom: 1px solid rgba(217, 79, 138, .3);
+    background: rgba(255, 255, 255, .52);
+}
+.page-15-anos .quince-step__number {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(217, 79, 138, .62);
+    border-radius: 50%;
+    color: #b83e78;
+    font: 500 1rem/1 Georgia, serif;
+}
+.page-15-anos .quince-step h3 {
+    margin: .1rem 0 .6rem;
+    color: #29212a;
+    font-size: .96rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+.page-15-anos .quince-step p {
+    margin: 0;
+    color: #786875;
+    font-size: .87rem;
+    line-height: 1.7;
+}
+.page-15-anos .quince-experience__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    margin-top: 2.5rem;
+    padding: 1.3rem 1.5rem;
+    border: 1px solid rgba(217, 79, 138, .4);
+    background: rgba(255, 255, 255, .56);
+}
+.page-15-anos .quince-experience__footer > span:first-child {
+    color: #d94f8a;
+    font-size: 2.3rem;
+}
+.page-15-anos .quince-experience__footer p {
+    margin: 0;
+    color: #786875;
+    line-height: 1.65;
+}
+.page-15-anos .quince-experience__footer strong {
+    color: #29212a;
+}
+.page-15-anos .quince-experience__sparkle {
+    color: #d94f8a;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 900px) {
+    .page-15-anos .quince-duo {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .page-15-anos .quince-duo__visual {
+        min-height: clamp(340px, 70vw, 560px);
+    }
+    .page-15-anos .quince-duo__copy {
+        max-width: none;
+    }
+    .page-15-anos .quince-experience__steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 600px) {
+    .page-15-anos .quince-duo {
+        padding: 4.5rem 1.1rem;
+    }
+    .page-15-anos .quince-duo__visual {
+        min-height: 320px;
+    }
+    .page-15-anos .quince-duo__photo--main {
+        inset: 3% 10% 10% 0;
+    }
+    .page-15-anos .quince-duo__photo--detail {
+        width: 48%;
+        height: 32%;
+        border-width: 5px;
+    }
+    .page-15-anos .quince-experience {
+        padding: 4.5rem 1.1rem;
+    }
+    .page-15-anos .quince-experience__photo-strip {
+        grid-template-columns: 1fr;
+        gap: .8rem;
+    }
+    .page-15-anos .quince-experience__photo-strip figure,
+    .page-15-anos .quince-experience__photo-strip figure:nth-child(2) {
+        height: 250px;
+        transform: none;
+    }
+    .page-15-anos .quince-experience__steps {
+        grid-template-columns: 1fr;
+    }
+    .page-15-anos .quince-step {
+        padding: 1.15rem;
+    }
+    .page-15-anos .quince-experience__footer {
+        align-items: flex-start;
+        gap: .8rem;
+        padding: 1rem;
+    }
+    .page-15-anos .quince-experience__sparkle {
+        display: none;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .page-15-anos .quince-duo *,
+    .page-15-anos .quince-experience * {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+
+
+/* Layout resets: these two sections now use their own editorial structures. */
+.page-15-anos .quince-duo {
+    display: grid;
+    min-height: auto;
+}
+.page-15-anos .quince-experience {
+    display: block;
+    min-height: auto;
+}

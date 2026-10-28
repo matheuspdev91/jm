@@ -1,0 +1,237 @@
+/* ==========================================================
+   FITFLIX DESIGN SYSTEM
+   FOUNDATION - UTILITIES
+========================================================== */
+
+
+/* ==========================================================
+   DISPLAY
+========================================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+/* ==========================================================
+   FLEX
+========================================================== */
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.gap-2 {
+    gap: var(--space-2);
+}
+
+.gap-4 {
+    gap: var(--space-4);
+}
+
+.gap-6 {
+    gap: var(--space-6);
+}
+
+/* ==========================================================
+   WIDTH / HEIGHT
+========================================================== */
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+
+/* ==========================================================
+   BACKGROUND
+========================================================== */
+
+.bg-primary {
+    background: var(--color-primary);
+}
+
+.bg-surface {
+    background: var(--color-surface);
+}
+
+
+/* ==========================================================
+   BORDER
+========================================================== */
+
+.rounded-sm {
+    border-radius: var(--radius-sm);
+}
+
+.rounded-md {
+    border-radius: var(--radius-md);
+}
+
+.rounded-lg {
+    border-radius: var(--radius-lg);
+}
+
+.rounded-full {
+    border-radius: var(--radius-full);
+}
+
+
+/* ==========================================================
+   CURSOR
+========================================================== */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+/* ==========================================================
+   OVERFLOW
+========================================================== */
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+   POSITION
+========================================================== */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* ==========================================================
+   HOLOGRAPHIC / SCI-FI UTILITIES
+========================================================== */
+
+.card-holographic {
+    background: radial-gradient(circle at top right, rgba(0, 255, 136, 0.05), transparent 60%),
+                linear-gradient(180deg, rgba(5, 5, 5, 0.65), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 255, 136, 0.15);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.03), inset 0 0 20px rgba(0, 255, 136, 0.02);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-holographic::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.4), transparent);
+    opacity: 0.5;
+}
+
+.text-neon {
+    color: var(--color-primary);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.4), 0 0 20px rgba(0, 255, 136, 0.2);
+}
+
+.text-glow-white {
+    color: #fff;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}

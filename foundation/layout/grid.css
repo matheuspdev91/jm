@@ -1,0 +1,131 @@
+/* ==========================================================
+   JHONY & MAURA
+   FOUNDATION — GRID
+========================================================== */
+
+/*
+|--------------------------------------------------------------------------
+| STANDARD GRIDS
+|--------------------------------------------------------------------------
+*/
+
+.grid-2 {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: var(--space-8);
+
+}
+
+
+.grid-3 {
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: var(--space-8);
+
+}
+
+
+.grid-4 {
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: var(--space-6);
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| AUTO GRID
+|--------------------------------------------------------------------------
+*/
+
+.grid-auto {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: var(--space-8);
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| EDITORIAL GRIDS
+|--------------------------------------------------------------------------
+*/
+
+.grid-editorial {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.8fr)
+        minmax(0, 1.2fr);
+
+    gap: clamp(var(--space-8), 6vw, var(--space-24));
+
+}
+
+
+.grid-editorial-reverse {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(0, 0.8fr);
+
+    gap: clamp(var(--space-8), 6vw, var(--space-24));
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| ASYMMETRIC MEDIA GRID
+|--------------------------------------------------------------------------
+*/
+
+.grid-media {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.5fr)
+        minmax(0, 1fr);
+
+    gap: clamp(var(--space-6), 4vw, var(--space-16));
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| RESPONSIVE
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-auto,
+    .grid-editorial,
+    .grid-editorial-reverse,
+    .grid-media {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
